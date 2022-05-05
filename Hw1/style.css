@@ -1,0 +1,65 @@
+.name{
+    background-color: rgb(161, 196, 196);
+    height: 100px;
+    padding: 20px;
+    
+}
+.back{
+    background-color: gray;
+}
+.calck {
+    background-color: rgb(132, 177, 162);
+    height: 200px;
+    padding: 20px;
+}
+.form1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.backnew{
+    background-color: rgb(69, 69, 100);
+}
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 0.6vh;
+  
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.image{
+    width: 40vw;
+    text-align: center;
+    grid-column: 3/4;
+    
+}
+.block_img{
+    display: grid;
+    grid-template-rows:  1fr;
+    grid-template-columns: 20% 10% 1fr 10% 20%;
+}
+.btn1{
+    grid-column: 2/3;
+    margin-left: 50%;
+  
+}
+.btn2{
+    grid-column: 4/5;
+    margin-left: 10%;
+}
+.btn1,
+.btn2{
+    height: 15%;
+    width: 40%;
+    margin-top: 100%;
+    border-radius: 10px;
+}

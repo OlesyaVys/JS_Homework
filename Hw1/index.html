@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="back">
+    <div class="name">
+        <form>
+            <label for="fname">Введите ваше имя</label>
+            <input name="input1" type="text">
+            <button onclick=showMessege(input1.value)>OK</button>
+        </form>
+    </div>
+    <div class="calck" onclick="changeBack(this)" id="div2">
+        <form>
+            <div>
+                <label for="fname2">Введите первое число</label>
+                <input name="input2" type="text">
+            </div>
+            <div>
+                <label for="fname3">Введите второе число</label>
+                <input name="input3" type="text">  
+            </div>
+            
+            <div class="form1">
+                <button type="button" onclick=sum(input2.value,input3.value)>+</button>
+                <button type="button" onclick=minus(input2.value,input3.value)>-</button>
+                <button type="button" onclick=mult(input2.value,input3.value)>*</button>
+                <button type="button" onclick=div(input2.value,input3.value)>/</button> 
+            </div>
+            <div class="form1">
+                <form>
+                    <label for="fname4">Результат</label>
+                    <input name="input4" id ="result" type="text">
+                </form> 
+            </div>
+              
+        </form>
+       
+    </div>
+   
+    <div class="block_img">
+        <button type="button" class="btn1" onclick="nextImg()"><i class="arrow left"></i></button>
+        <img src="1.jpeg" id="imageCity" class="image">
+        <button type="button" class="btn2" onclick="prevImg()"><i class="arrow right"></i></button>
+    </div>
+    <script src="index.js">
+  
+
+    </script>
+</body>
+</html>
