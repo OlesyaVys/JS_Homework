@@ -32,10 +32,9 @@ function changeBack(sender){
 
 function nextImg(){
     let imageCity=document.getElementById('imageCity');
-    let str1 = imageCity.src;
-    
-    let str2 = 'http://127.0.0.1:5500/';
-    let str = str1.replace(str2, '');
+    let str1 = imageCity.src, split = str1.split('/');
+        
+    let str = split[split.length-1];
     
     let i = parseInt(str.match(/\d+/));
     
@@ -50,10 +49,9 @@ function nextImg(){
 }
 function prevImg(){
     let imageCity=document.getElementById('imageCity');
-    let str1 = imageCity.src;
-    
-    let str2 = 'http://127.0.0.1:5500/';
-    let str = str1.replace(str2, '');
+    let str1 = imageCity.src, split = str1.split('/');
+        
+    let str = split[split.length-1];
     
     let i = parseInt(str.match(/\d+/));
     

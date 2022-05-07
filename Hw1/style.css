@@ -40,6 +40,7 @@ i {
     width: 40vw;
     text-align: center;
     grid-column: 3/4;
+    height:300px ;
     
 }
 .block_img{
