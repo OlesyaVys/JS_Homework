@@ -16,6 +16,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.inputResult{
+    width: 250px;
+    color: red;
+}
 .backnew{
     background-color: rgb(69, 69, 100);
 }

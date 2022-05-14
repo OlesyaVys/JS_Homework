@@ -4,22 +4,28 @@ function showMessege(name){
  
 
  function sum(a,b){
-    let i = Number(a)+Number(b)
-    document.getElementById('result').value=i;
+    const result = Number(a)+Number(b)
+    document.getElementById('result').value=result;
  }
  function minus(a,b){
-    let i = Number(a)-Number(b);
-    document.getElementById('result').value=i;
+    const result = Number(a)-Number(b);
+    document.getElementById('result').value=result;
  }
  function mult(a,b){
-    let i= Number(a)*Number(b);
-    document.getElementById('result').value=i;
+    const result= Number(a)*Number(b);
+    document.getElementById('result').value=result;
  }
  function div(a,b){
-    let i = Number(a)/Number(b);
-    document.getElementById('result').value=i;
+    if(Number(b)==0){
+        document.getElementById('result').value="Warming! На ноль делить нельзя!";
+    }
+    else {
+        const result = Number(a)/Number(b);
+        document.getElementById('result').value=result;
+    }
+    
  }
-function changeBack(sender){
+function changeBackground(sender){
     console.log (sender.classList.contains("backnew"))
     if(sender.classList.contains("backnew")==true){
        sender.classList.remove("backnew");
@@ -36,15 +42,15 @@ function nextImg(){
         
     let str = split[split.length-1];
     
-    let i = parseInt(str.match(/\d+/));
+    let number = parseInt(str.match(/\d+/));
     
-    if (i<=3){
-        i++;
-        document.getElementById('imageCity').src = i+'.jpeg';
+    if (number<=3){
+        number++;
+        document.getElementById('imageCity').src = number+'.jpeg';
     }
     else {
-        i=1;
-        document.getElementById('imageCity').src = i+'.jpeg';
+        number=1;
+        document.getElementById('imageCity').src = number+'.jpeg';
     }
 }
 function prevImg(){
@@ -53,14 +59,14 @@ function prevImg(){
         
     let str = split[split.length-1];
     
-    let i = parseInt(str.match(/\d+/));
+    let number = parseInt(str.match(/\d+/));
     
-    if (i>1){
-        i--;
-        document.getElementById('imageCity').src = i+'.jpeg';
+    if (number>1){
+        number--;
+        document.getElementById('imageCity').src = number+'.jpeg';
     }
     else {
-        i=4;
-        document.getElementById('imageCity').src = i+'.jpeg';
+        number=4;
+        document.getElementById('imageCity').src = number+'.jpeg';
     }
 }
