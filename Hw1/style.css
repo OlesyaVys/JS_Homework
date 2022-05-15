@@ -68,3 +68,15 @@ i {
     margin-top: 100%;
     border-radius: 10px;
 }
+.backwhite{
+    background-color: white;
+    color:black;
+}
+.backblack{
+    background-color: black;
+    color:white;
+}
+.backgreen{
+    background-color: rgb(36, 165, 94);
+    color:black;
+}

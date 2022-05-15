@@ -70,3 +70,22 @@ function prevImg(){
         document.getElementById('imageCity').src = number+'.jpeg';
     }
 }
+select.onclick = function(){
+    const resultSelect=document.getElementById('select').value;
+    console.log(resultSelect);
+    if (resultSelect=='white'){
+        body.classList.remove("backblack");
+        body.classList.remove("backgreen");
+        body.classList.add("backwhite");
+    }
+    if (resultSelect=='green'){
+        body.classList.remove("backwhite");
+        body.classList.remove("backblack");
+        body.classList.add("backgreen");
+    }
+    if (resultSelect=='black') {
+        body.classList.remove("backwhite");
+        body.classList.remove("backgreen");
+        body.classList.add("backblack");
+    }
+}
