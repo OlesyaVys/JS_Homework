@@ -1,0 +1,90 @@
+.main{
+    display: grid;
+    grid-template-rows: 30px 100px 70px 100px 30px 30px 50px;
+    grid-template-columns: 30% 20% 20%;
+    
+}
+h1,
+h2{
+    font-size: 30px;
+    color: rgb(48, 174, 212);
+    text-align: center;
+}
+.carBrand{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    
+}
+.carBrand_value{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.year_of_issue{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-top: 20px;
+}
+.year_of_issue_value{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.rudder{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    margin-top: 20px;
+}
+.rudder_value{
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+.fuel{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.fuel_value{
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+.mileage{
+    grid-row: 5/6;
+    grid-column: 2/3;
+    margin-top: 10px;
+}
+#mileage{
+    grid-row: 5/6;
+    grid-column: 3/4;
+    margin-top: 10px;
+}
+.power{
+    grid-row: 6/7;
+    grid-column: 2/3;
+    margin-top: 10px;
+}
+#power{
+    grid-row: 6/7;
+    grid-column: 3/4;
+    margin-top: 10px;
+}
+#button1{
+    grid-row: 7/8;
+    grid-column: 3/4;
+    margin-top: 20px;
+    text-align: center;
+}
+#button,
+#button1{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:rgb(48, 174, 212);
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+#button:hover,
+#button1:hover{
+    background-color:rgb(48, 174, 212, 0.5);
+}
+#button{
+    margin-left: 40%;
+}

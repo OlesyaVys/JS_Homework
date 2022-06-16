@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylefunction.css">
+    <title>sumInmit</title>
+</head>
+<body>
+    <div>
+        <h1>function sumInput</h1> 
+        <input type="button" id="button" value="Sign Up" >
+    </div>
+    <div>
+        <h2>Калькулатор стоимости авто</h2>
+        <form class="main">
+            <label for="carBrand" class="carBrand">Марка машины:</label>
+            <select id="carBrand" class="carBrand_value">
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Audi">Audi</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Ford">Ford</option>
+            </select><br/>
+            <label for="year_of_issue" class="year_of_issue">Год выпуска:</label>
+            <dir class="year_of_issue_value">
+                <input type="radio" name="s" value="0" checked="checked"/> Меньше 3 лет<br />
+                <input type="radio" name="s" value="3" /> От 3 до 5 лет <br/>
+                <input type="radio" name="s" value="5" /> От 5 до 7 лет<br/>
+                <input type="radio" name="s" value="7" /> Больше 7 лет<br/>
+            </dir>
+            <label class="rudder"> Расположение руля: </label>
+            <dir class="rudder_value">
+                <input type="radio" name="st" value="l" checked="checked"/> Левый руль<br />
+                <input type="radio" name="st" value="r" /> Правый руль<br/>
+            </dir>
+            <label class="fuel"> Тип топлива: </label>
+            <dir class="fuel_value">
+                <input type="radio" name="t" value="petrol" checked="checked"/> Бензин<br />
+                <input type="radio" name="t" value="diesel" /> Дизель <br/>
+                <input type="radio" name="t" value="electric" /> Электрический<br/>
+            </dir>
+            <label for="mileage" class="mileage"> Пробег: </label>
+            <input type="text" id="mileage"/><br/>
+            <label for="power" class="power"> Мощность, л.с.: </label>
+            <input type="text" id="power"/><br/>
+            <input type="button" id="button1" value="Рассчитать">
+    </div>
+    <script src="sumInput.js">
+    </script>
+</body>
+</html>

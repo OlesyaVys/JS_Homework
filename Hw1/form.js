@@ -39,3 +39,4 @@ password.onclick = function() {
 password2.onclick = function() {
     document.getElementById("password2").style.border="0.5px solid grey";
   };
+
